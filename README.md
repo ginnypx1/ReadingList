@@ -27,10 +27,8 @@ The app data is persisted using Core Data.
 
 ## Additional Features
 
-This app currently only adds books to read entitled "New Book"
+This app would be really cool as a tabbed app with tabs for saving movies, tv and books the user would like to remember to consume.
 
 Additional features I am currently working on include:
-- persisting the data 
-- giving the user the ability to add the book title
-- giving the user the ability to delete a book to read
-- adding a nice screen for any empty table prompting the user to create a new list
+- the edit button title needs to change to done when deleting a book title
+- add a nice screen for any empty table prompting the user to add a book title

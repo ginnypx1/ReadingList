@@ -42,12 +42,20 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="8dk-ZM-niM">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="dif-69-waY">
+                            <connections>
+                                <action selector="editTable:" destination="9gJ-em-rKA" id="q8C-ly-vTz"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="L5p-E0-Vma">
                             <connections>
                                 <action selector="addNewBook:" destination="9gJ-em-rKA" id="4r0-ks-Jye"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="editButton" destination="dif-69-waY" id="MB5-kv-xm5"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WR1-Il-H1e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
