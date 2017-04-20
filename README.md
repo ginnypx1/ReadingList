@@ -30,5 +30,5 @@ The app data is persisted using Core Data.
 This app would be really cool as a tabbed app with tabs for saving movies, tv and books the user would like to remember to consume.
 
 Additional features I am currently working on include:
-- the edit button title needs to change to done when deleting a book title
+- icons and a launch screen, a new font and some design pizazz
 - add a nice screen for any empty table prompting the user to add a book title

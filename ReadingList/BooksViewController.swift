@@ -15,7 +15,6 @@ class BooksViewController: CoreDataTableViewController {
     
     @IBOutlet weak var editButton: UIBarButtonItem!
     
-    
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
@@ -23,6 +22,7 @@ class BooksViewController: CoreDataTableViewController {
         
         // Set the title
         title = "Books to Read"
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(editTable))
         
         // Get the stack
         let delegate = UIApplication.shared.delegate as! AppDelegate
@@ -114,9 +114,9 @@ class BooksViewController: CoreDataTableViewController {
         tableView.setEditing(!tableView.isEditing, animated: true)
         // changes the text of the edit button
         if tableView.isEditing {
-            self.editButton.title = "One"
+            sender.title = "Done"
         } else {
-            self.editButton.title = "Two"
+            sender.title = "Edit"
         }
     }
 }
